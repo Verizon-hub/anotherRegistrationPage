@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/819df823c4.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+    <script defer src="registration.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main> 
+        <form autocomplete="off" onsubmit="return submit(checkInputs)" action="welcome.html" class="form" id="form" onchange="return checkInputs()" onclick="return checkInputs()">
+             <h2>Create Account</h2>
+              <div class="form-control" >
+                  <input id="username" type="text" placeholder="username">
+                  </i> <i class="far fa-check-circle">
+                  </i> <i class="fas fa-times"></i>
+                  <small></small>
+              </div>
+              <div class="form-control">
+                <input id="password" type="password" placeholder="Password" > 
+                <i class="far fa-check-circle">
+                </i> <i class="fas fa-times"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <input id="cpassword" type="password" placeholder="Confirm Password" > 
+                <i class="far fa-check-circle"></i> 
+                <i class="fas fa-times"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <input id="email" type="text" placeholder="Email" > 
+                <i class="far fa-check-circle">
+                </i> <i class="fas fa-times"></i>
+                <small></small>
+            </div>
+            <div>
+            <button >REGISTER</button>
+        </div>
+
+        </form>
+    </main>
+    <footer>
+        <div>&copy;Copyright Bagrat Tchintchaladze 2020</div>
+    </footer>
+    
+</body>
+</html>

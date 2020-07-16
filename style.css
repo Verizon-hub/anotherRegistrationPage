@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+
+
+}
+header{
+
+    height: 10vh;
+}
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.createaccount {
+    position: relative;
+    
+}
+form {
+    width: 20%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(213,22,22,1) 0%, rgba(252,102,69,1) 100%);
+    align-content: center;
+    border-radius: 10px;
+}
+/* Circle yes Check */
+form .far{     
+    position: relative;
+    visibility: hidden;
+    float: right;
+    bottom: 28px;
+    right: 8px;
+}
+.form-control.success .far {
+    color: green;
+    visibility: visible;
+}
+.form-control.success input {
+    border: solid;
+    border-color: rgb(43, 223, 43);
+}
+/* X */
+form .fas{     
+    position: relative;
+    visibility: hidden;
+    float: right;
+    bottom: 28px;
+    right: -5px;
+}
+.form-control.error .fas {
+    color: red;
+    visibility: visible;
+}
+.form-control.error input{
+    border: solid;
+    border-color: red;
+}
+.form-control small {
+    visibility: hidden;
+    font-size: 18px;
+    font-family: "VT323", sans-serif;
+    position: relative;
+    color: black;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+}
+.form-control.error small {
+
+    visibility: visible;
+}
+.form-control.success small{
+    visibility: hidden;
+}
+form h2 {
+    position: relative;
+    color: white;
+    top: 5px;
+    left: 10px;
+    font-size: 35px;
+}
+
+form div input{
+    display: block;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+form div {
+    text-align: center;
+    padding: 30px;
+    
+}
+form .registerBtn {
+    position: relative;
+    width: auto;
+    top: 5px;
+}
+form button{
+    position: relative;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    width: 190px; 
+    bottom: 10px;
+    font-size: 16px;
+    font-family: "Belgrano", sans-serif;
+    -webkit-box-shadow: 5px 5px 15px 1px #000000; 
+    box-shadow: 5px 5px 15px 1px #000000;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+form button:hover{
+    background: rgb(51,85,255);
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
